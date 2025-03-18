@@ -1,4 +1,4 @@
-# 技术目录
+   # 技术目录
 `deepseek`  + `qwen2.5-vl` + `graphrag` + `CosyVoice` + `SenseVoice` + `FunASR`
 
 ## 业务高效验证

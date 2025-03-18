@@ -1,0 +1,87 @@
+# This file was generated using the `serve build` command on Ray v2.43.0.
+
+proxy_location: EveryNode
+
+http_options:
+
+  host: 0.0.0.0
+
+  port: 8000
+
+grpc_options:
+
+  port: 9000
+
+  grpc_servicer_functions: []
+
+logging_config:
+
+  encoding: TEXT
+
+  log_level: INFO
+
+  logs_dir: null
+
+  enable_access_log: true
+
+applications:
+
+- name: asr_service
+
+  route_prefix: /asr_service
+
+  import_path: ars_service:app
+
+  runtime_env: {}
+
+  deployments:
+
+  - name: ASRService
+
+- name: tts_service
+
+  route_prefix: /tts_service
+
+  import_path: tts_service:app
+
+  runtime_env: {}
+
+  deployments:
+
+  - name: TTSService
+
+- name: audio_service
+
+  route_prefix: /audio_service
+
+  import_path: audio_service:app
+
+  runtime_env: {}
+
+  deployments:
+
+  - name: AudioService
+
+- name: translation_service
+
+  route_prefix: /translation_service
+
+  import_path: translation_service:app
+
+  runtime_env: {}
+
+  deployments:
+
+  - name: TranslationService
+
+- name: audio_play
+
+  route_prefix: /audio_play
+
+  import_path: audio_play_service:app
+
+  runtime_env: {}
+
+  deployments:
+
+  - name: AudioPlayService

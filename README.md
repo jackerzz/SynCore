@@ -18,16 +18,22 @@ SynCore 是一个开创性的开源人机交互框架，通过摄像头、麦克
   ░░░░░    ░░░░░░  ░░░░░░ ░░       ░░       ░░       
 ```
 
-## ✨ 核心特性
-### 🧠 **分布式孤独防御系统 (DLDS)**
-- 通过视觉姿态/语音情绪/操作节奏的三维建模，实时计算`孤独熵值`
-- 自适应启动虚拟陪伴协议（VCP），动态调节交互能量级
+## ✨ 效果展示
 
-### 🌀 **情感协议层**
-- 开源情感语法（OES）：`emotion.sync` 格式定义多维交互规则
-- 量子纠缠式记忆网络：用户行为在虚拟人意识中产生蝴蝶效应
+### Ray 分布式多模型自动伸缩缝 
+`微服务` `examples/mmovd_v4`
 
-### 🌐 **多模态共振引擎**
+- Cluster
+![Cluster](/docs/imgs/Cluster.png)
+
+- Jobs
+![Jobs](/docs/imgs/jobs.png)
+
+- Ray Test
+![Ray Test](/docs/imgs/ray_test.png)
+
+- 语音识别&翻译
+![Ray Test](/docs/imgs/sensevoice.png)
 
 
 ## 🚀 快速开始
